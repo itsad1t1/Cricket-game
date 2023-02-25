@@ -1,7 +1,7 @@
 //Cricket Game application
 #include <iostream>
 #include<string>
-//#include<ctime>
+#include<ctime>
 #include<unistd.h>
 #include<cstdlib>
 
@@ -20,7 +20,7 @@ class Team{
 
 //Declaring prototypes
 
-int playInning() //put semi
+int playInning();
 void selectBatsmanAndBowlerTeamA();
 void selectBatsmanAndBowlerTeamB();
 void decideWinner(int, int);
@@ -90,7 +90,7 @@ void DisplayA(){
 void selectBatsmanAndBowlerTeamA(){
 	
 	cout<<"----------------------------------------Team A will be the Batting Team------------------------------------\n";
-//	srand((unsigned) time(0));
+	srand((unsigned) time(0));
 	int res=1+(rand()%3);
 	switch(res){
 		case 1:
